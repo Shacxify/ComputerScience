@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=void\ shapeSet(int)
+comment1.params=
+comment1.target=void\ square()
+comment2.params=
+comment2.target=void\ iTriangle()
+comment3.params=
+comment3.target=void\ rTriangle()
+comment4.params=
+comment4.target=void\ print()
+comment5.params=
+comment5.target=void\ println()
+comment6.params=
+comment6.target=void\ spaces()
+comment7.params=
+comment7.target=void\ clearLines()
+numComments=8
