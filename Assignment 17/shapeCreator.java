@@ -2,7 +2,7 @@
 public class shapeCreator {
     int num;
     
-    public void shapeSet (int n) {
+    public void makeShape (int n) {
         num = n;
     }
 
@@ -11,7 +11,7 @@ public class shapeCreator {
             if (i == 0 || i == num - 1) {
                 for (int a = 0; a < num; a++) {
                     if (a == num - 1) {
-                        println();
+                        printwholeln();
                     } else {
                         print();
                     }
@@ -22,7 +22,7 @@ public class shapeCreator {
                 for (int b = 0; b < (num - 2); b++) {
                     System.out.print(" ");
                 }
-                println();
+                printwholeln();
 
             }
 
@@ -37,7 +37,7 @@ public class shapeCreator {
             for (int a = 0; a < (2 * i); a++) {
                 print();
             }
-            println();
+            printwholeln();
 
         }
 
@@ -50,7 +50,7 @@ public class shapeCreator {
             for (int a = 0; a < i; a++) {
                 print();
             }
-            println();
+            printwholeln();
 
         }
 
@@ -61,17 +61,17 @@ public class shapeCreator {
 
     }
 
-    public static void println() {
+    public static void printwholeln() {
         System.out.println("*");
 
     }
 
-    public static void spaces() {
+    public static void space() {
         System.out.println(" ");
 
     }
 
-    public static void clearLines() {
+    public static void clearLine() {
         for (int i = 0; i < 2; i++) {
             System.out.println(" ");
         }
