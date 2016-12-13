@@ -7,23 +7,26 @@
  */
 public class skylineConservatory
 {
-    public static boolean[] locker = new boolean[100];
+	public static boolean[] locker = new boolean[100];
 
-    public static void main (String [] args) {
-        //locker[2] = true;
-        /*if (locker[2] != false) {
-            System.out.println("It works!");
-        } else /*if (locker[3] == true)*/ {
-            /*System.out.println("It doesn't work");
-        }*/
+	public static void main (String [] args) {
+		System.out.println("Calculating.");
+		for (int i = 0; i <= 100; i++) {
+			for (int l = 0; l <= 100; l++) {
+				student(i, l);
+			}
+		}
+		
+		for (int n = 0; n <= 100; n++) {
+			if (locker[n] == true) {
+				System.out.println("Locker #" + n + " is open.");
+			}
+		}
+	}
 
-        for (int i = 0; i <= 100; i++) {
-          for (int l = 0; l <= 100; l++) {
-            
-          }
-    }
-
-    public static void student (int n) {
-        locker[n] =! locker[n];
-    }
+	public static void student (int n, int currentNum) {
+		if (n % currentNum == 0) {
+			locker[n] =! locker[n];
+		}
+	}
 }

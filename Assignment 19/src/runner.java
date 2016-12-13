@@ -25,19 +25,21 @@ public class runner
         int fullNum = 0;
         
         while (running) {
-            System.out.println("What food would you like to eat?");
+            System.out.println("\nWhat food would you like to eat?");
         
             String userInput = input.nextLine();
             
             for (int i = 0; i < userInput.length(); i++) {
-                System.out.print("Nom ");
                 
-                if (fullNum / 5 == 5  || 1) {
-                    System.out.print("Burp");
+                
+                if (userInput.equals("I'm full")) {
+                	running = false;
+                } else if (fullNum % 5 == 0 && fullNum != 0) {
+                    System.out.print("Burp. ");
+                } else {
+                	System.out.print("Nom ");
                 }
                 fullNum++;
-                System.out.println("");
-                
             }
         }
         
