@@ -1,0 +1,20 @@
+import java.util.*;
+/**
+ * Write a description of class deoxyribonucleicacid here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+
+public class quincux()
+{
+	
+    public static void main (String [] args) {
+        
+
+    }
+
+    
+    
+}

@@ -1,0 +1,10 @@
+
+public class functions {
+	public int s, b, path;
+	
+	public functions (int balls, int slots) {
+		s = slots;
+		b = balls;	
+	}
+	
+}

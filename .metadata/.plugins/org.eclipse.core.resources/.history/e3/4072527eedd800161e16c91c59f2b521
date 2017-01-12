@@ -1,0 +1,36 @@
+import java.util.*;
+/**
+ * Write a description of class deoxyribonucleicacid here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+
+public class quincux
+{
+	static Scanner input;
+	static int balls, slots;
+	static Random rand;
+	
+    public static void main (String [] args) {
+    	input = new Scanner(System.in);
+    	
+    	System.out.println("How many balls are put in?");
+    	balls = input.nextInt(); //Assign the balls
+    	
+    	System.out.println("How many slots does the quincux have?");
+    	slots = input.nextInt(); //Assign the slots
+    	
+    	
+    	//Drop balls
+    	for (int i = 0; i <= balls; i++) {
+    		int chance = rand.nextInt();
+    	}
+    	
+    	
+    }
+
+    
+    
+}

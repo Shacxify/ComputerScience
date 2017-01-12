@@ -1,0 +1,10 @@
+
+public class functions {
+	public int maxSlots, maxBalls;
+	
+	void functions (int b, int s) {
+		maxSlots = s;
+		maxBalls = b;
+		
+	}
+}
