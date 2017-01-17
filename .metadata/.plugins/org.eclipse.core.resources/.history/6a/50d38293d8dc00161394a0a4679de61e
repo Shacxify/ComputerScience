@@ -1,0 +1,17 @@
+
+public class Grid1 {
+
+	public static void main(String[] args) {
+		int[][] grid = new int[5][5];
+		int num = 1;
+		
+		for (int r = 0; r < grid.length; r++) {
+			for (int c = 0; c < grid[r].length; c++) {
+				grid[r][c] = 1;
+				console.log(grid[r][c]);
+				num++;
+			}
+		}
+	}
+
+}

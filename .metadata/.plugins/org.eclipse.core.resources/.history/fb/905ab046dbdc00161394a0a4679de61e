@@ -1,0 +1,15 @@
+
+public class TicTacToe {
+
+	public static void main(String[] args) {
+		char[][] board = new char[3][3];
+		
+		for (int c = 0; c < board.length; c++) {
+			for (int i = 1; i =< board[c].length; i++) {
+				System.out.print(i + "\t");
+			}
+			System.out.println("");
+		}
+	}
+
+}
