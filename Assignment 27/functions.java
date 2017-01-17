@@ -7,7 +7,11 @@ public class functions {
 		b = balls;	
 	}
 	
-	public void setPath(int path) {
-		p = path;
+	public void printo () {
+		System.out.print("o");
+	}
+	
+	public void createGraph () {
+		
 	}
 }
