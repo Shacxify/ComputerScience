@@ -1,0 +1,21 @@
+
+public class functions {
+	public int s, b, p;
+	public char[][] createGraph;
+	
+	public functions (int balls, int slots) {
+		s = slots;
+		b = balls;	
+	}
+	
+	public void printo () {
+		System.out.print("o");
+	}
+	
+	public void createGraph () {
+		createGraph = new char[s][b];
+		for (int i = s; i< createGraph.length; i++) {
+			createGraph[i][0] = '|';
+		}
+	}
+}

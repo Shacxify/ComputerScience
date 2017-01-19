@@ -58,7 +58,7 @@ public class quincux
     	for (int c = 1; c < slotBalls.length; c++) {
 			System.out.print("\n Slot #" + c + " has " + slotBalls[c] + " ball(s)");
 		}
-    	
-    	
+
+    	quin.newGraph();
     }
 }
