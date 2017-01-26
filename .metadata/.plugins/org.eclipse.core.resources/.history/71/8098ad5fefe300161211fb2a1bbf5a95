@@ -1,0 +1,27 @@
+public class matrix {
+	
+	public static int a, b, c, d, e, f;
+	public static int[][] mainMatrix = new int[2][2], invMatrix = new int[2][2];
+	public static int[] multiMatrix = new int[2];
+	
+	public matrix (int fA, int fB, int fC, int sA, int sB, int sC) {
+		a = fA; b=fB; c=fC; d=sA; e=sB; f=sC;
+		mainMatrix = new int[2][2];
+		multiMatrix = new int[2];
+		mainMatrix[0][0] = a; mainMatrix[0][1] = b; multiMatrix[0] = c; 
+		mainMatrix[1][0] = d; mainMatrix[1][1] = e; multiMatrix[1] = f;
+		
+	}
+
+	
+	public void printMain() {
+		System.out.print(mainMatrix[0][0] + " " + mainMatrix[0][1] +
+				  "\n" + mainMatrix[1][0] + " " + mainMatrix[1][1]);
+	}
+	
+	public void invBoard() {
+		mainMatrix[0][0] = e; mainMatrix[0][1] = d; 
+		mainMatrix[1][0] = b; mainMatrix[1][1] = a;
+	}
+	
+}

@@ -1,0 +1,13 @@
+
+public class runner {
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Enter a, b, and c for the first equation:");
+		System.out.println("Enter a, b, and c for the second equation:");
+		
+		public mat = new matrix ();
+		
+	}
+
+}

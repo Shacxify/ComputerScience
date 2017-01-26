@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class runner {
+	public static Scanner scan;
+	
+	public static void main(String[] args) {
+		scan = new Scanner(System.in);
+		int a, b, c, d, e, f;
+		System.out.println("Enter a, b, and c for the first equation:");
+		a = 
+		System.out.println("Enter a, b, and c for the second equation:");
+		
+		public mat = new matrix ();
+		
+	}
+
+}

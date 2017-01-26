@@ -1,0 +1,9 @@
+public class matrix {
+	
+	public int a, b, c, d, e, f;
+	
+	
+	public matrix (int fA, int fB, int fC, int sA, int sB, int sC) {
+		a = fA; b=fB; c=fC; d=sA, e=sB, f=sC;
+	}
+}

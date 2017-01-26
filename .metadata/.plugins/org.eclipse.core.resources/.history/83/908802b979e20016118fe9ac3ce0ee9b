@@ -1,0 +1,17 @@
+public class matrix {
+	
+	public int a, b, c, d, e, f;
+	
+	
+	public matrix (int fA, int fB, int fC, int sA, int sB, int sC) {
+		a = fA; b=fB; c=fC; d=sA; e=sB; f=sC;
+		
+	}
+	
+	public static int[][] createBoard() {
+		int[][] mainMatrix = new int[2][2];
+		int[] multMatrix = new int[2];
+		mainMatrix[0][0] = a; mainMatrix[0][1] = b; mainMatrix[1][1] = d; mainMatrix[1][1] = e;
+		multiMatrix[0] = c; multiMatrix[0] = c; 
+	}
+}
