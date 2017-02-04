@@ -1,0 +1,25 @@
+
+public class rules {
+	public rules() {
+		
+	}
+	
+	public static void createBase() {
+		for (int c = 0; c < board.length; c++) {
+			if (c == 0 || c == 2 || c == 4) {
+				for (int i = 0; i < board[c].length; i++) {
+					if (i % 2 != 0){
+						board[c][i] = '|';
+					} else {
+						board[c][i] = Character.forDigit(symNum, 10);
+						symNum++;
+					}
+				}
+			} else {
+				for (int i = 0; i < board[c].length; i++) {
+					board[c][i] = '-';
+				}
+			}
+		}
+	}
+}

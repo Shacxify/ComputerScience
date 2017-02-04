@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * Write a description of class deoxyribonucleicacid here.
+ * Write a description of pachinko here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -13,7 +13,7 @@ public class quincux
 	static int balls, slots, path = 1;
 	static Random rand;
 	static functions quin;
-	static int[] slotBalls; 
+	static int[][] slotBalls; 
 	
     public static void main (String [] args) {
     	input = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class quincux
     	quin = new functions(balls, slots);
     	
     	//Drop balls
-    	slotBalls = new int[quin.s + 1];
+    	slotBalls = new int[slots][balls];
     	for (int i = 1; i <= quin.b; i++) {
     		for (int j = 1; j < quin.s; j++) {
     			double chance = Math.random();
@@ -49,12 +49,20 @@ public class quincux
     				path += 1;
     			}
     		}
-    		slotBalls[path] += 1;
+    		slotBalls[path][i] += 1;
     		System.out.println("Ball #" + i + " fell into Slot #" + (path));
     		System.out.println("The path #" + path + " has " + slotBalls[path] + " ball(s)");
 			path = 0;
 			
     	}
+    	
+    	for (int qw = 0; qw < slotBalls.length; qw++) {
+    		System.out.println();
+    		for (int qj = 0; qj < slotBalls[qw].length; qj++) {
+    			
+    		} 
+    	}
+    	
     	for (int c = 1; c < slotBalls.length; c++) {
 			System.out.print("\n Slot #" + c + " has " + slotBalls[c] + " ball(s)");
 		}
