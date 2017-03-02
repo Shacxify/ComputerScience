@@ -51,10 +51,18 @@ public class Hourglass
     // post: prints value of largest hourglass in grid
     public static void largestHourglass()
     {
-    	for (int j = 1; j < 13; j++) {
-    		 addVal(j);
-    	}
-        
+    	int totalHolder = Integer.MIN_VALUE;
+        for (int k = 0; k < 4; k++) {
+            for (int j = 0; j < 4; j++) {
+                int sum = grid[k    ][j] + grid[k    ][j + 1] + grid[k    ][j + 2]
+                                        + grid[k + 1][j + 1]
+                        + grid[k + 2][j] + grid[k + 2][j + 1] + grid[k + 2][j + 2];
+                if (totalHolder < sum) {
+                    totalHolder = sum;
+                }
+            }
+        }
+        System.out.println(totalHolder);
         
     }
     
@@ -72,7 +80,7 @@ public class Hourglass
         
         while(inFile.hasNext())  // stop parsing file when there are no more values
         {
-            grid[r][c++] = inFile.nextInt();  // populate our 2D array with integers from file
+            grid[r][c++] = inFile.nextInt();  // populate our 2D griday with integers from file
             
             if(c > 5)
             {
@@ -80,12 +88,13 @@ public class Hourglass
                 c = 0;
             }
         }
+        
     }
     
-    public static void addVal (int i) {
-    	float fullNumber = grid[0 + row][0 + i] + grid[0 + row][1 + i] + grid[0 + row][2 + i]
-    										  + grid[1 + row][1 + i] +
-    	 				   grid[2 + row][0 + i] + grid[2 + row][1 + i] + grid[2 + row][2 + i];
-    	vals[i] = fullNumber;
-    }
+    /*public static void addVal (int k) {
+    	float fullNumber = grid[0 + row][0 + k] + grid[0 + row][1 + k] + grid[0 + row][2 + k]
+    										  + grid[1 + row][1 + k] +
+    	 				   grid[2 + row][0 + k] + grid[2 + row][1 + k] + grid[2 + row][2 + k];
+    	vals[k] = fullNumber;
+    }*/
 }
