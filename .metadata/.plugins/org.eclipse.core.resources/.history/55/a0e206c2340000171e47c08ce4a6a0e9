@@ -1,3 +1,10 @@
+/**
+ * Write a description of class LogMessage here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
 public class LogMessage
 {
 
@@ -14,23 +21,26 @@ public class LogMessage
     public boolean containsWord(String keyword){
         int keywordIndex = description.indexOf(keyword); 
 
-        boolean cA = false;
-        boolean cB = false;
-        boolean cC = false;
-        
+        boolean conditionA = false;
+        boolean conditionB = false;
+        boolean conditionC = false;
+        // ConditionA - check if the keyword is in the description
         if(description.indexOf(keyword) == -1){ 
-            cA = true; 
+            conditionA = true; 
         }
 
+        // ConditionB - check if the keyword is first in the description or has a space preceeding
         if(description.indexOf(keyword) == 0 ||description.substring(keywordIndex - 1, keywordIndex) == "" ){
-            cB = true; 
-        }
-        
-        if(keywordIndex + keyword.length() == description.length()|| description.substring(keywordIndex+keyword.length(), keywordIndex+keyword.length()+1) == ""){
-            cC = true; 
+            conditionB = true; 
         }
 
-        if(cA && cB && cC){
+        // CoditionC - check if the keyword is last in the description or has a space succeeding
+        if(keywordIndex + keyword.length() == description.length()|| description.substring(keywordIndex+keyword.length(), keywordIndex+keyword.length()+1) == ""){
+            conditionC = true; 
+        }
+
+        // check if all three conditions exists simulateneously
+        if(conditionA && conditionB && conditionC){
             return true; 
         }
         else{
