@@ -1,0 +1,14 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Contacts {
+	private List<Person> people;
+	
+	public Contacts() {
+		people = new ArrayList<Person>();
+	}
+	
+	public void addPerson(String na, String nu, String em) {
+		people.add(new Person());
+	}
+}

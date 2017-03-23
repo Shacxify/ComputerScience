@@ -17,6 +17,7 @@ public class SumOfBlocks
         }
         floor += 1;
         rooms += floor;
+        
         if(floor >= setPoint ){
             return rooms;
         }

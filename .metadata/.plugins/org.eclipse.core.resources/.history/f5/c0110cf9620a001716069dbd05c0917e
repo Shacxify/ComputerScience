@@ -1,0 +1,28 @@
+
+//By: Cash
+// 03162017
+
+public class Person {
+	private String name;
+	private String number;
+	private String email;
+	
+	public Person (String na, String num, String em) {
+		name = na;
+		number = num;
+		email = em;
+	}
+	
+	//Name is returned
+	public String getName() {
+		
+	}
+	//Number is returned
+	public String getNumber() {
+		
+	}
+	//Email is returned
+	public String getEmail() {
+		
+	}
+}

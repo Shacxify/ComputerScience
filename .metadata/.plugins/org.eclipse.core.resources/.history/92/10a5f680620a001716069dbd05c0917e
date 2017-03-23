@@ -1,0 +1,10 @@
+
+//By: Cash
+// 03162017
+
+public class Person {
+	private String name;
+	private String number;
+	private String email;
+	
+}

@@ -1,0 +1,73 @@
+import java.util.List;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.io.File;
+import java.io.IOException;
+
+public class Contacts {
+	private List<Person> people;
+	
+	public Contacts() {
+		people = new ArrayList<Person>();
+	}
+	
+	public void addPerson(String na, String nu, String em) {
+		people.add(new Person(na, nu, em));
+		sortContacts();
+	}
+	
+	public ArrayList<> sortContacts( ) {
+		
+	};
+	
+	public void addFromFile(String file) throws IOException {
+		Scanner inFile = new Scanner(new File(file));
+		
+		while(inFile.hasNext()) {
+			String line = inFile.nextLine();
+			people.add(new Person(grabName(line), grabNum(line), grabEmail(line)));
+		}
+	
+		inFile.close();
+		sortContacts();
+	}
+	
+	private String grabName(String line) {
+		
+	}
+	
+	private String grabNum(String line) {
+		
+	}
+	
+	private String grabEmail(String line) {
+		
+	}
+	
+	private void sortContacts() {
+		Person temp;
+		
+		for (int i = 1; i < list.length; i++) {
+			for (int j = i; j > 0; j--) {
+				if (list[j] < list[j-1]) {
+					temp = list[j];
+					list[j] = list[j-1];
+					list[j-1] = temp;
+				}
+			}
+		}
+		
+		return input;
+	}
+	
+	
+	@Override
+	public String toString() {
+		String list = "";
+		
+		for (Person p: people) {
+			list += p.getName() + ", " + p.getNumber() + ", " + p.getEmail() + "\n";
+		}
+		return list;
+	}
+}

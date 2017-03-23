@@ -1,0 +1,10 @@
+import java.util.List;
+import jaa.util.ArrayList;
+
+public class Contacts {
+	private List<Person> people;
+	
+	public Contacts() {
+		people = new ArrayList<Person>();
+	}
+}
